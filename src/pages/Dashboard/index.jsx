@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { Stack, Typography } from "@mui/material";
 import { Grid2 } from "@mui/material";
+import Header from "../../components/clients/Header/Header";
+import Carousel from "../../components/clients/Dashboard/Carousel";
 
 export default function Dashboard() {
   return (
@@ -232,6 +234,19 @@ export default function Dashboard() {
               </Grid2>
             </Box>
           </Box>
+
+          <Box
+            className="session-3"
+            sx={{
+              backgroundColor:"#474232",
+              maxHeight:"500px",
+              maxWidth:"100vw"
+            }}
+          >
+            <Carousel />
+            
+          </Box>
+
         </Stack>
       </Container>
     </React.Fragment>
